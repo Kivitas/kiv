@@ -1,0 +1,5 @@
+# Each concatenation leaves a temporary string behind for the collector to reclaim.
+print "a" + "b" + "c" + "d" + "e" + "f" + "g" + "h";
+print "ab" + "cd" + "ef" + "gh";
+print 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1;
+print "x" + "";

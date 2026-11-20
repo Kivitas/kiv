@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 kivitas
+
+[package]
+name = "kiv-frontend"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["kivitas"]
+description = "Lexer, parser and bytecode compiler for the kiv scripting language"
+publish = false
+
+[lib]
+name = "kiv_frontend"
+# staticlib is linked into the C++ binary; rlib lets `cargo test` run.
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+
+[profile.release]
+debug = false

@@ -1,0 +1,4 @@
+# String literals and concatenation with +.
+print "hello, " + "world";
+print "a" + "b" + "c";
+print "no" + "";
